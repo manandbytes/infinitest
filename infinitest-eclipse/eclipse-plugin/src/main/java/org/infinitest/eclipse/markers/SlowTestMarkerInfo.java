@@ -68,7 +68,8 @@ public class SlowTestMarkerInfo extends AbstractMarkerInfo
 
     private String buildMessage()
     {
-        return stripPackageName(testName) + "." + methodStats.methodName + " ran in " + methodStats.duration() + "ms";
+        return stripPackageName(testName) + "." + methodStats.methodName + " ran in " + methodStats.duration() 
+        + "ms";
     }
 
     @Override

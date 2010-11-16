@@ -76,6 +76,7 @@ public class WhenWatchingForSlowTests
         observer.testCaseComplete(event);
 
         verify(mockMarkerRegistry).addMarker(expectedMarker);
+        
     }
 
     @Test

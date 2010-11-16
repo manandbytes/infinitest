@@ -35,6 +35,8 @@ import org.infinitest.toolkit.EqualsHashCodeTestSupport;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.infinitest.util.InfinitestGlobalSettings.*;
+
 public class WhenMarkingTestsAsSlow extends EqualsHashCodeTestSupport
 {
     private static final String TEST_NAME = "com.foo.TestName";
@@ -49,7 +51,7 @@ public class WhenMarkingTestsAsSlow extends EqualsHashCodeTestSupport
         stats.stopTime = 5000;
         marker = new SlowTestMarkerInfo(TEST_NAME, stats, resourceLookup);
     }
-
+    
     @Test
     public void shouldPlaceMarkerInSlowTest() throws CoreException
     {
